@@ -1,17 +1,12 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen({super.key});
+  const StartScreen(this.handleStartQuiz, {super.key});
+
+  final void Function() handleStartQuiz;
 
   @override
   Widget build(context) {
-    // todo: implement function
-    void handleStartQuiz() {
-      log('handleStartQuiz');
-    }
-
     return (Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
