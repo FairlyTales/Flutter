@@ -16,7 +16,10 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('assets/images/quiz-logo.png'),
+          Image.asset(
+            'assets/images/quiz-logo.png',
+            color: const Color.fromARGB(210, 255, 255, 255),
+          ),
           const Padding(
             padding: EdgeInsets.only(top: 60),
             child: Text('Quiz',
