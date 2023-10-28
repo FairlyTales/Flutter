@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen(this.handleStartQuiz, {super.key});
@@ -15,11 +16,12 @@ class StartScreen extends StatelessWidget {
             'assets/images/quiz-logo.png',
             color: const Color.fromARGB(210, 255, 255, 255),
           ),
-          const Padding(
-            padding: EdgeInsets.only(top: 60),
+          Padding(
+            padding: const EdgeInsets.only(top: 60),
             child: Text('Quiz',
-                style: TextStyle(
-                  fontSize: 20,
+                style: GoogleFonts.lato(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
                   color: Colors.white,
                 )),
           ),
@@ -31,9 +33,10 @@ class StartScreen extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(5)))),
                 onPressed: handleStartQuiz,
                 icon: const Icon(Icons.keyboard_arrow_right_rounded),
-                label: const Text('Start quiz',
-                    style: TextStyle(
+                label: Text('Start quiz',
+                    style: GoogleFonts.lato(
                       fontSize: 20,
+                      fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ))),
           )
