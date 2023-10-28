@@ -45,7 +45,7 @@ class _QuestionsState extends State<Questions> {
                     color: Colors.white,
                   )),
               const SizedBox(height: 30),
-              ...question.getShuffledAnswers().map((answer) => Container(
+              ...question.shuffledAnswers.map((answer) => Container(
                   padding: const EdgeInsets.only(top: 20),
                   child: FilledButton(
                     style: FilledButton.styleFrom(
