@@ -1,2 +1,3 @@
 # Flutter
-Flutter course
+
+Learning Flutter by building apps
